@@ -91,4 +91,9 @@ describe('<Heading/>', () => {
     const element = container.querySelector('h6');
     expect(element.tagName.toLowerCase()).toBe('h6');
   });
+
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<Heading>testando texto</Heading>);
+    expect(container).toMatchSnapshot();
+  });
 });
