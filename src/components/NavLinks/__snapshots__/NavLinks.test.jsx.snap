@@ -51,6 +51,7 @@ exports[`<NavLinks /> should match snapshot 1`] = `
 
 <div>
   <nav
+    aria-label="Main menu"
     class="c0"
   >
     <a
@@ -73,6 +74,27 @@ exports[`<NavLinks /> should match snapshot 1`] = `
       target="_self"
     >
       Devil May Cry 2
+    </a>
+    <a
+      class="c1"
+      href="https://www.youtube.com/watch?v=bzda5UA71Y8"
+      target="_self"
+    >
+      Devil May Cry 3
+    </a>
+    <a
+      class="c1"
+      href="https://www.youtube.com/watch?v=bzda5UA71Y8"
+      target="_self"
+    >
+      Devil May Cry 4
+    </a>
+    <a
+      class="c1"
+      href="https://www.youtube.com/watch?v=bzda5UA71Y8"
+      target="_self"
+    >
+      Devil May Cry 5
     </a>
   </nav>
 </div>

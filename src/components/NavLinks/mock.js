@@ -16,6 +16,21 @@ const links = [
     children: 'Devil May Cry 2',
     link: 'https://www.youtube.com/watch?v=bzda5UA71Y8',
   },
+  {
+    _id: 4,
+    children: 'Devil May Cry 3',
+    link: 'https://www.youtube.com/watch?v=bzda5UA71Y8',
+  },
+  {
+    _id: 5,
+    children: 'Devil May Cry 4',
+    link: 'https://www.youtube.com/watch?v=bzda5UA71Y8',
+  },
+  {
+    _id: 6,
+    children: 'Devil May Cry 5',
+    link: 'https://www.youtube.com/watch?v=bzda5UA71Y8',
+  },
 ];
 
 export default links;
