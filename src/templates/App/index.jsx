@@ -1,5 +1,11 @@
+import GridContent from '../../components/GridContent';
+
 const Home = () => {
-  return <div>teste</div>;
+  return (
+    <GridContent>
+      <h1>Testando grid</h1>
+    </GridContent>
+  );
 };
 
 export default Home;
