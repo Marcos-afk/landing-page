@@ -59,11 +59,11 @@ exports[`<GridContent /> should render 1`] = `
       <div
         class="c2"
       >
-        <h1
+        <h2
           class="c3"
         >
           teste de grid de duas colunas
-        </h1>
+        </h2>
         <div
           class="c4"
         >
@@ -223,11 +223,11 @@ exports[`<GridContent /> should render with false background 1`] = `
       <div
         class="c2"
       >
-        <h1
+        <h2
           class="c3"
         >
           teste de grid de duas colunas
-        </h1>
+        </h2>
         <div
           class="c4"
         >
