@@ -1,4 +1,4 @@
-import Template from '../Base';
+import Template from './';
 import footerMock from '../../components/Footer/mock';
 import menuMock from '../../components/NavLinks/mock';
 import logoMock from '../../components/LogoLink/mock';
@@ -10,17 +10,20 @@ import GridGallery from '../../components/GridGallery';
 import GridGalleryMock from '../../components/GridGallery/mock';
 import GridContent from '../../components/GridContent';
 import GridContentMock from '../../components/GridContent/mock';
-const Home = () => {
-  return (
-    <Template footerHtml={footerMock.html} links={menuMock} logoData={logoMock}>
-      <GridTwoColumns {...GridTwoColumnsMock} background />
-      <GridContent {...GridContentMock} />
-      <GridText {...GridMock} background />
-      <GridGallery {...GridGalleryMock} />
-      <GridText {...GridMock} background />
-      <GridContent {...GridContentMock} />
-    </Template>
-  );
-};
+import { renderTheme } from '../../styles/render-theme';
 
-export default Home;
+describe('< Template />', () => {
+  it('should render', () => {
+    const { container } = renderTheme(
+      <Template footerHtml={footerMock.html} links={menuMock} logoData={logoMock}>
+        <GridTwoColumns {...GridTwoColumnsMock} background />
+        <GridContent {...GridContentMock} />
+        <GridText {...GridMock} background />
+        <GridGallery {...GridGalleryMock} />
+        <GridText {...GridMock} background />
+        <GridContent {...GridContentMock} />
+      </Template>,
+    );
+    expect(container).toMatchSnapshot();
+  });
+});

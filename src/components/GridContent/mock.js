@@ -25,7 +25,7 @@ const data = {
     height: 80px;
   }
   </code></pre>`,
-  background: true,
+  background: false,
 };
 
 export default data;

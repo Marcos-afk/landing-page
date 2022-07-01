@@ -3,7 +3,7 @@ import { renderTheme } from '../../styles/render-theme';
 import data from './mock';
 describe('<GridContent />', () => {
   it('should render', () => {
-    const { container } = renderTheme(<GridContent title={data.title} background={data.background} html={data.html} />);
+    const { container } = renderTheme(<GridContent title={data.title} background={true} html={data.html} />);
     expect(container).toMatchSnapshot();
   });
 

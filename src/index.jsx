@@ -5,13 +5,13 @@ import { GlobalStyles } from './styles/global-styles';
 import { theme } from './styles/theme';
 
 import Home from './templates/App';
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Home />
       <GlobalStyles />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root'),
 );
