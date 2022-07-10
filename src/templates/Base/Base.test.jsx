@@ -15,7 +15,7 @@ import { renderTheme } from '../../styles/render-theme';
 describe('< Template />', () => {
   it('should render', () => {
     const { container } = renderTheme(
-      <Template footerHtml={footerMock.html} links={menuMock} logoData={logoMock}>
+      <Template footerHtml={footerMock.footerHtml} links={menuMock} logoData={logoMock}>
         <GridTwoColumns {...GridTwoColumnsMock} background />
         <GridContent {...GridContentMock} />
         <GridText {...GridMock} background />

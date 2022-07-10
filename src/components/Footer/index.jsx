@@ -3,18 +3,18 @@ import * as Styled from './styles';
 import TextComponent from '../TextComponent';
 import SectionContainer from '../SectionContainer';
 
-const Footer = ({ html }) => {
+const Footer = ({ footerHtml }) => {
   return (
     <Styled.Container>
       <SectionContainer>
-        <TextComponent>{html}</TextComponent>
+        <TextComponent>{footerHtml}</TextComponent>
       </SectionContainer>
     </Styled.Container>
   );
 };
 
 Footer.propTypes = {
-  html: P.string.isRequired,
+  footerHtml: P.string.isRequired,
 };
 
 export default Footer;

@@ -5,7 +5,7 @@ import data from './mock';
 
 describe('<Footer />', () => {
   it('should render', () => {
-    const { container } = renderTheme(<Footer html={data.html} />);
+    const { container } = renderTheme(<Footer footerHtml={data.footerHtml} />);
     expect(screen.getByRole('link', { name: 'Feito com ❤ por Marcos André' })).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
